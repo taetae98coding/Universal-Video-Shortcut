@@ -1,0 +1,17 @@
+{
+  "name": "Universal Video Shortcut",
+  "description": "Universal video time shortcut",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "all_frames": true
+    }
+  ]
+}
