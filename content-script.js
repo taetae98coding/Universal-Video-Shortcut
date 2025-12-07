@@ -21,7 +21,6 @@ window.addEventListener("keydown", (e) => {
             time = 80;
             break;
         default:
-            console.log("Invalid key pressed", e.key);
             return;
     }
 
@@ -35,9 +34,7 @@ window.addEventListener("keydown", (e) => {
         videoList.forEach((video) => {
             try {
                 video.currentTime += time;
-                console.log(`⏩ ${e.key} → ${time}s (currentTime : ${video.currentTime.toFixed(1)}s)`);
             } catch (err) {
-                console.warn("set currentTime error :", err);
             }
         });
     }
